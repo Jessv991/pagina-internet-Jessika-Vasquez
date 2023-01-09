@@ -1,0 +1,683 @@
+/*PAGINA DE INICIO*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background: rgb(247, 241, 241);
+}
+
+section{
+    background:#d6efe8;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    float: left;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*TODO LO QUE ENCAPSULA LO DEL CENTRO*/
+.central{
+    width: 70%;
+    height: 500px;
+    background-color: rgb(0, 0, 0);
+}
+
+
+/*EL CONTENEDOR DE LAS REDES SOCIALES*/
+.barra_izq{
+    float: left;
+    width: 7.5%;
+    height: 500px;
+    background-color: rgb(7, 86, 55);
+    
+}
+
+
+/*LOGO DE LA EMPRESA*/
+.logo img{
+    border-bottom-left-radius: 50%;
+    max-width: 100%;
+    
+    
+}
+
+/*TODO SOBRE LAS IMÁGENES ROTATIVAS*/
+.foto{
+    float: left;
+    position: relative;
+    width: 25%;
+    top: -42px;
+    height: 116%;
+    background-color: rgb(61, 65, 64);
+    overflow: hidden;
+}
+
+ .foto ul{
+    display: flex;
+    animation: cambio 20s infinite alternate linear;
+    width: 100%;
+    position: relative;
+}
+
+ .foto li{
+    
+    list-style: none;
+    position: relative;
+ }
+
+ .foto img{
+    position: relative;
+ }
+
+ @keyframes cambio{
+    0%{margin-left: 0;}
+    25%{margin-left: 0;}
+
+    30%{margin-left: -100%;}
+    50%{margin-left: -100%;}
+
+    55%{margin-left: -200%;}
+    75%{margin-left: -200%;}
+   
+ }
+
+ /*REDES SOCIALES*/
+
+:root{
+    --facebook: #3b5999;
+    --instagram: #c63b6c;
+    --twitter: #55acee;
+    --linkedin: #0077B5;
+}
+
+.redes-container{
+    float: left;
+    display: flex;
+    height: 65vh;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-left: 20%;
+    
+}
+
+.redes-container ul li{
+    float: left;
+    margin: 0;
+    height: 80px;
+    text-align: center;
+    list-style: none;
+    position: relative;
+    
+}
+
+.redes-container ul li a{
+    float: left;
+    display: block;
+    padding:  15px;
+    background: rgb(94, 129, 119);
+    line-height: 20px;
+    font-size: 18px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
+    transition: .2;
+    border-radius: 20%;
+    position: relative;
+    
+}
+
+.redes-container ul:hover a{
+    filter: blur(2px);
+}
+
+.redes-container ul li a:hover{
+    transform: translate(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, .4);
+    filter: none;
+}
+
+.redes-container ul li .facebook:hover{
+    background: var(--facebook);
+}
+
+.redes-container ul li .instagram:hover{
+    background: var(--instagram);
+}
+
+.redes-container ul li .twitter:hover{
+    background: var(--twitter);
+}
+
+.redes-container ul li .linkedin:hover{
+    background: var(--linkedin);
+}
+
+
+/*TODO EL LADO DERECHO*/
+.lado_derecho{
+    float: right;
+    width: 67.5%;
+    height: 500px;
+    background-color: rgb(2, 2, 2);
+    position: relative;    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+
+/*TODO REFERENTE AL MENÚ*/
+article{
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+
+nav{
+    width: 100%;
+    display:flex; /*DISTANCIA PALABRAS MENU*/
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: rgba(94, 129, 119, 0.555);
+    position: absolute;
+}
+
+.enlaces-menu{
+    display: flex;
+    padding: 0;
+    top: 0.5rem;
+    right: 1.5rem;
+}
+
+@media (max-width:768px){
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: space-around;
+        align-items: center;
+        height: 50vh;
+    }
+}
+
+.enlaces-menu li{
+    padding: 0 15px;
+    list-style: none;
+    transition: 0.3s;
+    
+}
+
+.enlaces-menu li a{
+    text-decoration: none;
+    font-size: 150%;
+    color: #f3f3f3;
+    font-weight: 600;
+    
+}
+
+.enlaces-menu li:hover{
+    background-color: rgba(115, 148, 139, 0.235);
+    position: relative;
+}
+
+/*LA PRESENTACIÓN DE LA AGENCIA*/
+
+.present{
+    margin-top: 25%;
+    background-color: black;
+    width: 100%;
+    height: 30%;
+    position:absolute;
+    font-style: italic;
+}
+
+.slogan{
+    position: relative;
+    margin-right: 30%;
+    font-family: 'Dancing Script';
+}
+
+.slogan::after, .slogan::before{
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    top: 0.6em;
+}
+
+.subSlogan{
+    position: relative;
+    margin-left: 50%;
+    font-family: 'Dancing Script';
+    color: white;
+}
+
+.subSlogan::after, .subSlogan::before{
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    top: 0.6em;
+}
+
+.imgAvion{
+    margin-left: 40%;
+}
+
+/*DISPOSITIVOS MOVILES*/
+@media (max-width:768px){
+    article{
+        position: relative;
+    }
+}
+
+
+.enlaces-menu li{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.enlaces-menu li e{
+    text-decoration: none;
+    font-size: 1.8;
+    color: #f3f3f3;
+    font-weight: 600;
+}
+
+
+/*PAGINA SERVICIOS*/
+
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+#servicios{
+    background-color: #d6efe8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#servivios{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    width: 100%;
+    font-family: 'Dancing Script';
+    font-style: italic;
+    position: relative;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.container .card{
+    width: 330px;
+    height: 430px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px rgba(0, 0, 0, .2);
+
+}
+
+.container .card img{
+    width: 330px;
+    height: 220px;
+}
+
+.container .card h4{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.container .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: 3498db;
+    
+}
+
+/*PAGINA EQUIPO*/
+
+.contAvion{
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    left: 10px;
+    top: 250px;
+}
+
+.imgAvion1{
+    width: 5px;
+    height: 5px;
+}
+
+.contenedorText{
+    background-color: rgb(0, 128, 79);
+    margin-top: 30%;
+    margin-right: -30%;
+    margin-left: 20%;
+    border-radius: 5%;
+    padding-bottom: 50px;
+}
+
+#equipo{
+    background-color: #d6efe8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#equipo{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.containerE{
+
+    width: 60%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin : auto;
+}
+
+/*TITULOS CON RAYAS*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+.cont{
+    text-align: center;
+}
+
+.contP{
+    margin-top: 5%;
+}
+
+.cont1{
+    margin-top: 13%;
+}
+
+.encabezado:hover::before, 
+.encabezado:hover::after{
+    transform: scale(1); /*HACER QUE APAREZCAN LAS RAYAS*/
+}
+
+.encabezado{
+    display: inline-block;
+    position: relative;
+    font-family: 'Dancing Script';
+    font-style: italic;
+    color: rgb(197, 233, 222);
+}
+
+.encabezado::after,.encabezado::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.6em;
+    transform: scale(0); /*HACER DESAPARECER LAS RAYAS*/
+    transition: all 0.4s ease-in; /*ANIMACIÓN DE LAS RAYAS*/
+}
+
+.encabezado::before{
+    left: -140px;
+}
+
+.encabezado::after{
+    right: -140px;
+}
+
+
+#qs{
+    font-weight: 0;
+    font-size: 15px;
+    color: rgb(197, 233, 222);
+    margin-left: 50px;
+    margin-right: 50px; 
+    text-align: justify;
+}
+
+
+/*PAGINA CONTACTO*/
+
+#contacto{
+    background-color: #d6efe8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+#contacto{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+form{
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+}
+
+#boton{
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width:480px){
+    form{
+        width: 100%;
+    }
+}
+
+
+
+/*PAGINA OFERTAS*/
+
+#ofertas{
+    background-color: #d6efe8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+#ofertas{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
+
+/*PAGINA RESERVAS*/
+
+.cont2{
+    width: 100%;
+}
+
+.title:hover::before, 
+.title:hover::after{
+    transform: scale(1); /*HACER QUE APAREZCAN LAS RAYAS*/
+}
+
+.title{
+    display: inline-block;
+    position: relative;
+    font-family: 'Dancing Script';
+    font-style: italic;
+}
+
+.title::after,.title::before{
+    content: '';
+    position: absolute;
+    width: 370px;
+    height: 3px;
+    background-color: currentColor;
+    top: 0.8em;
+    transform: scale(0); /*HACER DESAPARECER LAS RAYAS*/
+    transition: all 0.8s ease-in; /*ANIMACIÓN DE LAS RAYAS*/
+}
+
+.title::before{
+    left: -1px;
+}
+
+.title::after{
+    right: -1px; 
+}
+
+
+#reservas{
+    background-color: #d6efe8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+#reservas{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*PAGINA DE CONTACTO*/
+
+.container-boton{
+    
+}
+
+
+#contacto{
+    background-color: #d6efe8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
